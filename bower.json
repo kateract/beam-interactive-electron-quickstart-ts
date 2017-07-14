@@ -1,9 +1,9 @@
 {
-  "name": "angular2-boilerplate",
-  "description": "An easy to use Angular 2 boilerplate for Angular 2 RC1",
+  "name": "mixer-interactive-electron-quickstart",
+  "description": "An easy to use Mixer Interactive with Electron and Angular",
   "main": "gulpfile.js",
   "authors": [
-    "Cory Forward"
+    "Kateract"
   ],
   "license": "MIT",
   "keywords": [
@@ -11,7 +11,7 @@
     "Angular2",
     "typescript"
   ],
-  "homepage": "https://github.com/c4wrd/angular2-electron-boilerplate",
+  "homepage": "https://github.com/kateract/mixer-interactive-electron-quickstart",
   "ignore": [
     "**/.*",
     "node_modules",

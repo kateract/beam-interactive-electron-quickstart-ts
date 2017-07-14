@@ -1,16 +1,16 @@
-Angular 2 Electron Boilerplate
+Mixer Interactive Electron Quickstart
 =====================
 
-An easy to use boilerplate for Angular 2 applications. This includes all of the necesssary features for using Angular 2 as of the RC5 update, including forms, NgModule and an easy to use development flow.
+An easy to use boilerplate for Mixer Interactive games using Electron and Angular
 
 Install
 =======
 
 Installing this boilerplate is extremely simple!
 
-`git clone https://github.com/c4wrd/angular2-electron-boilerplate`
+`git clone https://github.com/kateract/mixer-interactive-electron-quickstart`
 
-`cd angular2-electron-boilerplate`
+`cd mixer-interactive-electron-quickstart`
 
 `npm install`
 
@@ -39,3 +39,6 @@ Building
 To build your application, you can simply run `npm run build`. This will copy the files to the dist directory, but will not start the Electron application.
 
 You can run your application with `npm run start`
+
+
+This Repository is built on top of and borrows a lot from [angular2-electron-boilerplate](https://github.com/c4wrd/angular2-electron-boilerplate).
