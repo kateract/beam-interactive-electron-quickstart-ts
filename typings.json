@@ -1,0 +1,6 @@
+{
+  "name": "angular2-boilerplate",
+  "globalDependencies": {
+    "electron": "registry:dt/electron#1.4.8+20170316233216"
+  }
+}

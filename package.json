@@ -1,0 +1,51 @@
+{
+  "name": "angular2-boilerplate",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp build",
+    "start": "npm run build && electron dist",
+    "package": "npm run build && gulp electron:package",
+    "postinstall": "concurrently \"bower install\" \"typings install\""
+  },
+  "dependencies": {
+    "@angular/common": "^4.2.6",
+    "@angular/compiler": "^4.2.6",
+    "@angular/core": "^4.2.6",
+    "@angular/forms": "~4.2.6",
+    "@angular/http": "^4.2.6",
+    "@angular/platform-browser": "^4.2.6",
+    "@angular/platform-browser-dynamic": "^4.2.6",
+    "@angular/router": "^4.2.6",
+    "@angular/upgrade": "^4.2.6",
+    "angular-in-memory-web-api": "^0.3.2",
+    "core-js": "^2.4.1",
+    "jasmine": "^2.6.0",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "5.4.2",
+    "systemjs": "^0.20.15",
+    "zone.js": "^0.8.13"
+  },
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "concurrently": "^3.5.0",
+    "del": "^3.0.0",
+    "electron": "^1.6.11",
+    "gulp": "^3.9.1",
+    "gulp-atom-electron": "^1.14.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-shell": "^0.6.3",
+    "gulp-symdest": "^1.1.0",
+    "run-sequence": "^2.0.0",
+    "typescript": "^2.4.1",
+    "typings": "^2.1.1"
+  },
+  "keywords": [
+    "Angular",
+    "Angular2",
+    "typescript"
+  ],
+  "author": "Cory Forward",
+  "license": "MIT",
+  "description": "An easy to use Angular 2 boilerplate for Angular 2 RC1"
+}

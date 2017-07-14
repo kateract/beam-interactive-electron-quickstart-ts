@@ -1,0 +1,8 @@
+dist
+typings
+node_modules
+.vscode
+.DS_Store
+packages
+bower_components
+.idea
