@@ -1,5 +1,6 @@
 'use strict';
-
+import { IInteractiveHost } from './IInteractiveHost';
+import { InteractiveHost} from './InteractiveHost';
 const electron : Electron.ElectronMainAndRenderer = require('electron');
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
@@ -7,6 +8,7 @@ const BrowserWindow = electron.BrowserWindow;
 const ipcMain = electron.ipcMain;
 
 var mainWindow : Electron.BrowserWindow = null;
+var interactiveHost : IInteractiveHost = null;
 
 app.on('window-all-closed', () => {
   if (process.platform != 'darwin') {
@@ -15,6 +17,8 @@ app.on('window-all-closed', () => {
 });
 
 app.on('ready', () => {
+  interactiveHost = new InteractiveHost(); 
+
   mainWindow = new BrowserWindow({width: 800, height: 600});
   mainWindow.loadURL('file://' + __dirname + '/index.html');
   mainWindow.webContents.openDevTools();
@@ -23,7 +27,6 @@ app.on('ready', () => {
   });
 });
 
-ipcMain.on('message', (event, arg) => {
-  console.log(`Received ${arg}`);
-  event.sender.send("reply", "pong");
-});
+ipcMain.on('GetInteractiveHost', (event, arg) => {
+  event.sender.send("InteractiveHostCreated", interactiveHost);
+})

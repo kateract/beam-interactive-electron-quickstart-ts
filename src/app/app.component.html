@@ -1,7 +1,12 @@
 <div class="container">
 
-    <h1>{{text_hello_world}} <small>{{text_small}}</small> </h1>
-    <input type="text" [(ngModel)]="text_small" />
-
-    <button (click)="test()">Click me</button>
+    <h1>{{title}}</h1>
+    <ul class="buttons">
+        <li *ngFor="let button of buttons" 
+            [class.selected]="button === selectedButton"
+            (click)="onSelect(button)">
+            <span class="badge">{{button.controlID}}</span> {{button.text}}
+        </li>
+    </ul>    
+    <button-detail [button]="selectedButton"></button-detail>
 </div>
