@@ -33,7 +33,7 @@
     "bower": "^1.8.0",
     "concurrently": "^3.5.0",
     "del": "^3.0.0",
-    "electron": "^1.6.11",
+    "electron": "^9.4.0",
     "gulp": "^3.9.1",
     "gulp-atom-electron": "^1.14.0",
     "gulp-sass": "^3.1.0",
